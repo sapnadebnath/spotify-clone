@@ -1,4 +1,4 @@
-// Get audio element
+
 const audio = document.getElementById("audioPlayer");
 
 // Get player controls
@@ -36,7 +36,7 @@ playBtn.addEventListener("click", function () {
 });
 
 
-// ---------------- LOAD SONG DURATION ----------------
+// LOAD SONG DURATION 
 
 audio.addEventListener("loadedmetadata", function () {
 
@@ -47,7 +47,7 @@ audio.addEventListener("loadedmetadata", function () {
 });
 
 
-// ---------------- UPDATE PROGRESS BAR ----------------
+// UPDATE PROGRESS BAR 
 
 audio.addEventListener("timeupdate", function () {
 
@@ -58,7 +58,7 @@ audio.addEventListener("timeupdate", function () {
 });
 
 
-// ---------------- MOVE MUSIC USING PROGRESS BAR ----------------
+// MOVE MUSIC USING PROGRESS BAR 
 
 progressBar.addEventListener("input", function () {
 
@@ -67,7 +67,7 @@ progressBar.addEventListener("input", function () {
 });
 
 
-// ---------------- FORMAT TIME ----------------
+// FORMAT TIME 
 
 function formatTime(time) {
 
@@ -83,7 +83,7 @@ function formatTime(time) {
 }
 
 
-// ---------------- WHEN SONG ENDS ----------------
+// WHEN SONG ENDS 
 
 audio.addEventListener("ended", function () {
 
